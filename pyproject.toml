@@ -1,5 +1,5 @@
 [project]
-name = "dsc-winequality"
+name = "dsc_column_control"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"

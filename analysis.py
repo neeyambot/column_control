@@ -1,3 +1,6 @@
+# Author: Nazia
+# Date: May 2026
+# Goal: EDA and cleaning for distillation column control model 
 import pandas as pd
 import numpy as np
 
@@ -47,7 +50,7 @@ REDUNDANT_COLS = [
     "state_DC_condenser_duty",     # duplicate of output_C_Duty
     "state_DC_reboiler_duty",      # duplicate of output_R_Duty
     "output_residue_molar_flow",   #verified above, it is constant(5.8) except at 6 places where it is 5.8 when rounded
-    "state_DC_reflux_ratio",        # same reason
+    "state_DC_reflux_ratio",        # same reason...
     ]
 # Combine both lists and only drop columns that exist
 DROP_COLS = constant_cols + [c for c in REDUNDANT_COLS if c in df.columns]
